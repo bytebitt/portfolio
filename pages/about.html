@@ -16,20 +16,48 @@
     <link href="../dist/output.css" rel="stylesheet">
     <title>About Me</title>
 </head>
-<body class="bg-cover text-white" style="background-image: url('/images/fourmont.jpeg');">
-    <div class="container max-w-[1400px] mx-auto flex">
-        
+<body class="bg-cover text-white " style="background-image: url('/images/fourmont.jpeg');">
+    <div class="container max-w-[1400px] mx-auto flex px-10 gap-5 max-sm:p-2 max-lg:p-5">
+
         <aside class="bg-black/20 backdrop-blur-lg mx-auto mt-20 h-[800px] w-[300px]
-        border border-white/10 shadow-black/20 shadow-lg rounded-lg">
+        border border-white/10 shadow-black/20 shadow-lg rounded-lg max-md:hidden max-lg:p-2">
             <div class="flex justify-center mt-10">
-                <img src="/images/assideava.jpg" alt="" class="rounded-full w-[170px] h-[170px] border border-white/20">
+                <img src="../images/assideava.jpg" alt="" class="rounded-full w-[170px] h-[170px] border border-white/20">
             </div>
             <p class="text-4xl font-semibold flex justify-center mt-5">ByteBit</p>
             <nav class="flex justify-center mt-20">
                 <ul class="flex flex-col gap-10 justify-center items-center">
                     <li class="bg-white/10 w-[200px] h-[50px] rounded-lg flex justify-center items-center 
                     hover:bg-red-400/20 hover:w-[210px] transition-all duration-300">
-                        <a href="#">About</a>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li class="bg-white/10 w-[200px] h-[50px] rounded-lg flex justify-center items-center 
+                    hover:bg-red-400/20 hover:w-[210px] transition-all duration-300">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="bg-white/10 w-[200px] h-[50px] rounded-lg flex justify-center items-center 
+                    hover:bg-red-400/20 hover:w-[210px] transition-all duration-300">
+                        <a href="#">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="block mx-auto mt-30 text-white/50 hover:font-semibold transition-all duration-300" type="button">Change language</button>
+        </aside>
+
+        <aside id="burger-menu" class="fixed top-0 left-0 h-full w-[80%] bg-black/80 backdrop-blur-lg 
+        transform -translate-x-full transition-transform duration-300 z-40 max-md:block hidden rounded-r-lg p-5">
+        <div class="" id="">
+            <button type="button" id="burger-button-close" class="hidden max-md:block p-5 absolute top-0 left-0"><i class="fa fa-bars text-2xl"></i></button>
+        </div>
+            <div class="flex justify-center mt-10">
+                <img src="../images/assideava.jpg" alt="" class="rounded-full w-[170px] h-[170px] border border-white/20">
+            </div>
+            <p class="text-4xl font-semibold flex justify-center mt-5">ByteBit</p>
+            <nav class="flex justify-center mt-20">
+                <ul class="flex flex-col gap-10 justify-center items-center">
+                    <li class="bg-white/10 w-[200px] h-[50px] rounded-lg flex justify-center items-center 
+                    hover:bg-red-400/20 hover:w-[210px] transition-all duration-300">
+                        <a href="../pages/about.html">About</a>
                     </li>
                     <li class="bg-white/10 w-[200px] h-[50px] rounded-lg flex justify-center items-center 
                     hover:bg-red-400/20 hover:w-[210px] transition-all duration-300"">
@@ -44,9 +72,32 @@
             <button class="block mx-auto mt-30 text-white/50 hover:font-semibold transition-all duration-300" type="button">Change language</button>
         </aside>
 
-        <main class="bg-black/20 backdrop-blur-lg mx-auto mt-20 h-[800px] w-[1000px] border border-white/10 shadow-black/20 shadow-lg rounded-lg">
-            <p class="text-5xl p-10">About Me</p>
+        <main class="bg-black/20 backdrop-blur-lg mx-auto mt-20 min-h-[800px] w-[1000px] border border-white/10 shadow-black/20 shadow-lg rounded-lg 
+        max-sm:w-full max-md:mt-0 p-15">
+            <p class="text-white text-6xl max-md:text-3xl">About Me</p>
+            <div class="py-10 text-white/80">
+                <p class="text-3xl max-md:text-2xl">Hi there! I'm <span class="text-red-400/80">Bytebit</span>,</p>
+                <p class="text-[20px] py-5 max-md:text-[18px]">
+                    a future full-stack web developer from Ukraine. <br class="max-md:hidden">
+                    Right now, I'm focused on mastering the <br class="max-md:hidden"> 
+                    front-end and learning how to build dynamic, <br class="max-md:hidden">
+                    responsive websites that feel alive.
+                </p>
+                <p class="text-3xl max-md:text-2xl">My <span class="text-red-400/80 max-md:text-2xl">Tech Stack:</span></p>
+                <ul class="p-5 text-[19px]">
+                    <li class="hover:text-red-400/80 transition-colors duration-300">✔ HTML & CSS</li>
+                    <li class="hover:text-red-400/80 transition-colors duration-300">✔ JavaScript</li>
+                    <li class="hover:text-red-400/80 transition-colors duration-300">✔ TailwindCSS</li>
+                    <li class="hover:text-red-400/80 transition-colors duration-300">✔ Sass</li>
+                    <li class="hover:text-red-400/80 transition-colors duration-300">✔ Python</li>
+                    <l class="hover:text-red-400/80 transition-colors duration-300">✔ Flutter</li>
+                </ul>
+            </div>
+            <div class="" id="">
+                <button type="button" id="burger-button" class="hidden max-md:block p-5 absolute top-0 left-0"><i class="fa fa-bars text-2xl"></i></button>
+            </div>
         </main>
     </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
