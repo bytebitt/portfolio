@@ -8,6 +8,6 @@ burgerButton.addEventListener("click", () => {
 });
 
 burgerButtonClose.addEventListener("click", () => {
-    burgerMenu.classList.add('-translate-x-full'); // Сховуємо меню
+    burgerMenu.classList.add('-translate-x-full'); 
     burgerMenu.classList.remove('translate-x-0'); 
 });
