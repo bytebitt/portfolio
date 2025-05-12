@@ -350,6 +350,9 @@
   .bg-cover {
     background-size: cover;
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -398,6 +401,9 @@
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
